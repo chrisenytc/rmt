@@ -1,0 +1,434 @@
+{
+    "project": {
+        "name": "RmT",
+        "description": "RmT: A CLI tool to remove all your tweets at once",
+        "version": "0.1.0",
+        "url": "https://github.com/chrisenytc/rmt"
+    },
+    "files": {
+        "lib/helpers.js": {
+            "name": "lib/helpers.js",
+            "modules": {},
+            "classes": {
+                "Helpers": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/rmt.js": {
+            "name": "lib/rmt.js",
+            "modules": {},
+            "classes": {
+                "RmT": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Helpers": {
+            "name": "Helpers",
+            "shortname": "Helpers",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/helpers.js",
+            "line": 18
+        },
+        "RmT": {
+            "name": "RmT",
+            "shortname": "RmT",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/rmt.js",
+            "line": 28,
+            "is_constructor": 1,
+            "example": [
+                "\n\n    var api = new RmT('consumerKey', 'consumerSecret');"
+            ],
+            "params": [
+                {
+                    "name": "consumerKey",
+                    "description": "The twitter consumer key",
+                    "type": "String"
+                },
+                {
+                    "name": "consumerSecret",
+                    "description": "The twitter consumer secret",
+                    "type": "String"
+                }
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/helpers.js",
+            "line": 26,
+            "description": "Method responsible for check if path exists",
+            "example": [
+                "\n\n    helpers.exists('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "exists",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if file exists",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 43,
+            "description": "Method responsible for reading files and get content",
+            "example": [
+                "\n\n    helpers.read('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "read",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fillepath",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns file content",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 61,
+            "description": "Method responsible for writing files",
+            "example": [
+                "\n\n    helpers.write('./rmt', 'string data');"
+            ],
+            "itemtype": "method",
+            "name": "write",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fillePath",
+                    "description": "File path of archive",
+                    "type": "String"
+                },
+                {
+                    "name": "data",
+                    "description": "Data of file",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 86,
+            "description": "Method responsible for demove files",
+            "example": [
+                "\n\n    helpers.remove('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "remove",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 102,
+            "description": "Method responsible for demove directories",
+            "example": [
+                "\n\n    helpers.rm('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "rm",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of directory",
+                    "type": "String"
+                }
+            ],
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 128,
+            "description": "Method responsible for check if path is a file",
+            "example": [
+                "\n\n    helpers.isFile('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "isFile",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if path is file",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/helpers.js",
+            "line": 146,
+            "description": "Method responsible for check if path is a directory",
+            "example": [
+                "\n\n    helpers.isDir('./rmt');"
+            ],
+            "itemtype": "method",
+            "name": "isDir",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "File path of archive",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Returns true if path is directory",
+                "type": "String"
+            },
+            "class": "Helpers"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 11,
+            "description": "Module Dependencies",
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 56,
+            "description": "Method responsible for asking questions",
+            "example": [
+                "\n\n    api.prompt(prompts, cb);"
+            ],
+            "itemtype": "method",
+            "name": "prompt",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "prompts",
+                    "description": "Array of prompt options",
+                    "type": "Object"
+                },
+                {
+                    "name": "cb",
+                    "description": "A callback",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 75,
+            "description": "Method responsible for create twitter client instance",
+            "example": [
+                "\n\n    api.createClient('accessTokenKey', 'accessTokenSecret');"
+            ],
+            "itemtype": "method",
+            "name": "createClient",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "accessTokenKey",
+                    "description": "The twitter access token key",
+                    "type": "String"
+                },
+                {
+                    "name": "accessTokenSecret",
+                    "description": "The twitter access token secret",
+                    "type": "String"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 97,
+            "description": "Method responsible for save consumer credentials",
+            "example": [
+                "\n\n    api.setConfig('consumerKey', 'consumerSecret', function(err, data) {\n         console.log(data);\n    });"
+            ],
+            "itemtype": "method",
+            "name": "setConfig",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "consumerKey",
+                    "description": "The twitter consumer key",
+                    "type": "String"
+                },
+                {
+                    "name": "consumerSecret",
+                    "description": "The twitter consumer secret",
+                    "type": "String"
+                },
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 128,
+            "description": "Method responsible for login",
+            "example": [
+                "\n\n    api.login(function(err, data) {\n         console.log(data);\n    });"
+            ],
+            "itemtype": "method",
+            "name": "login",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 180,
+            "description": "Method responsible for remove twitter credentials",
+            "example": [
+                "\n\n    api.logout(function(err, message) {\n         console.log(message);\n    });"
+            ],
+            "itemtype": "method",
+            "name": "logout",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 205,
+            "description": "Method responsible for showing the user profile",
+            "example": [
+                "\n\n    api.profile();"
+            ],
+            "itemtype": "method",
+            "name": "profile",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 238,
+            "description": "Method responsible for show your all tweets",
+            "example": [
+                "\n\n    api.show();"
+            ],
+            "itemtype": "method",
+            "name": "show",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "limit",
+                    "description": "A number to limit the number of tweets returned",
+                    "type": "Number"
+                },
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        },
+        {
+            "file": "lib/rmt.js",
+            "line": 273,
+            "description": "Method responsible for delete all tweets",
+            "example": [
+                "\n\n    api.remove();"
+            ],
+            "itemtype": "method",
+            "name": "remove",
+            "access": "public",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "removeAll",
+                    "description": "A boolean to enable to remove all tweets",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "cb",
+                    "description": "A callback with error and api response",
+                    "type": "Function"
+                }
+            ],
+            "class": "RmT"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type\nModule Dependencies",
+            "line": " lib/rmt.js:11"
+        }
+    ]
+}

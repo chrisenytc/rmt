@@ -1,0 +1,10 @@
+node_modules
+temp
+docs
+rmtConfig.json
+*.log
+.idea
+
+
+# don't ignore .npmignore files
+!.npmignore

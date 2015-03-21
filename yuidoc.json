@@ -1,0 +1,10 @@
+{
+    "name": "RmT",
+    "description": "RmT: A CLI tool to remove all your tweets at once",
+    "version": "0.1.0",
+    "url": "https://github.com/chrisenytc/rmt",
+    "options": {
+        "outdir": "./docs",
+        "paths": "./lib"
+    }
+}
